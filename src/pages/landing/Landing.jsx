@@ -23,6 +23,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import SplashCursor from "../../components/SplashCursor";
 import TextType from "../../components/TextType";
+import udemycert from "../../assets/udemycertificate.jpg";
 
 const projectsSeed = [
   {
@@ -302,19 +303,14 @@ export default function Portfolio() {
               </div>
               <div>
                 <h1 className="text-xl font-semibold">Ismail Timileyin</h1>
-               
-                  <TextType
-                    text={[
-                      "Full-stack Web Developer ",
-                      "Software Engineer",
-                      "",
-                    ]}
-                    typingSpeed={75}
-                    pauseDuration={1500}
-                    showCursor={true}
-                    cursorCharacter="|"
-                  />
-               
+
+                <TextType
+                  text={["Full-stack Web Developer ", "Software Engineer", ""]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                />
               </div>
             </div>
 
@@ -642,6 +638,18 @@ export default function Portfolio() {
               <p className="ml-[-59px] mt-[12px] sm:ml-[-68px]">2 years+</p>
             </div>
           </div>
+          <hr />
+
+          <section>
+            <h3 className="text-xl font-bold mb-4">Certifications</h3>
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+              <div className="">
+                <img src={udemycert} alt="" />
+              </div>
+              <div className=""></div>
+              <div className=""></div>
+            </div>
+          </section>
 
           <section id="projects">
             <h3 className="text-xl font-bold mb-4">Projects</h3>
