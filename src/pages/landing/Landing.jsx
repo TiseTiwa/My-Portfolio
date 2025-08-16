@@ -305,9 +305,9 @@ export default function Portfolio() {
                 <h1 className="text-xl font-semibold">Ismail Timileyin</h1>
 
                 <TextType
-                  text={["Full-stack Web Developer ", "Software Engineer", ""]}
+                  text={["Full-stack Web Developer ", "Software Engineer", "BSc Computer-Science"]}
                   typingSpeed={75}
-                  pauseDuration={1500}
+                  pauseDuration={1300}
                   showCursor={true}
                   cursorCharacter="|"
                 />
