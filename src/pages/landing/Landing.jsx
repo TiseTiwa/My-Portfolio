@@ -24,6 +24,7 @@ import toast, { Toaster } from "react-hot-toast";
 import SplashCursor from "../../components/SplashCursor";
 import TextType from "../../components/TextType";
 import udemycert from "../../assets/udemycertificate.jpg";
+import techstudio from "../../assets/techstudio.jpg";
 
 const projectsSeed = [
   {
@@ -236,6 +237,22 @@ export default function Portfolio() {
       delay: 150,
       reset: true,
     });
+
+    ScrollReveal().reveal(".udemy", {
+      duration: 2000,
+      origin: "left",
+      distance: "900px",
+      delay: 150,
+      reset: true,
+    });
+
+    ScrollReveal().reveal(".techstudio", {
+      duration: 2000,
+      origin: "right",
+      distance: "900px",
+      delay: 150,
+      reset: true,
+    });
   }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -305,7 +322,11 @@ export default function Portfolio() {
                 <h1 className="text-xl font-semibold">Ismail Timileyin</h1>
 
                 <TextType
-                  text={["Full-stack Web Developer ", "Software Engineer", "BSc Computer-Science"]}
+                  text={[
+                    "Full-stack Web Developer ",
+                    "Software Engineer",
+                    "BSc Computer-Science",
+                  ]}
                   typingSpeed={75}
                   pauseDuration={1300}
                   showCursor={true}
@@ -642,12 +663,13 @@ export default function Portfolio() {
 
           <section>
             <h3 className="text-xl font-bold mb-4">Certifications</h3>
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
               <div className="">
-                <img src={udemycert} alt="" />
+                <img src={udemycert} alt="" className="sm:h-[350px] udemy" />
               </div>
-              <div className=""></div>
-              <div className=""></div>
+              <div className="">
+                <img src={techstudio} alt="" className="sm:h-[350px] techstudio" />
+              </div>
             </div>
           </section>
 
