@@ -21,7 +21,6 @@ import nodemon from "../../assets/nodemon.png";
 import node from "../../assets/node.png";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
-import SplashCursor from "../../components/SplashCursor";
 import TextType from "../../components/TextType";
 import udemycert from "../../assets/udemycertificate.jpg";
 import techstudio from "../../assets/techstudio.jpg";
@@ -299,7 +298,6 @@ export default function Portfolio() {
 
   return (
     <div>
-      <SplashCursor />
 
       <div className="min-h-screen bg-gradient-to-r from-white to-gray-50 dark:from-black dark:to-purple-800 text-gray-900 dark:text-gray-100 transition-colors duration-100 overflow-x-hidden">
         {/* Top floating controls */}
