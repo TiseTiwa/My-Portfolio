@@ -24,6 +24,7 @@ import toast, { Toaster } from "react-hot-toast";
 import TextType from "../../components/TextType";
 import udemycert from "../../assets/udemycertificate.jpg";
 import techstudio from "../../assets/techstudio.jpg";
+import headshot from "../../assets/headshotimg.png";
 
 const projectsSeed = [
   {
@@ -35,7 +36,7 @@ const projectsSeed = [
   },
   {
     id: 8,
-    title: "Tidoy",
+    title: "Tidoy Airbnb",
     desc: "Modern web app landing built with a React + Vite stack.",
     demo: "https://tidoy-main-seven.vercel.app/",
     github: "",
@@ -92,7 +93,6 @@ export default function Portfolio() {
       origin: "top",
       distance: "20px",
       delay: 100,
-      reset: true,
     });
 
     ScrollReveal().reveal(".years", {
@@ -100,7 +100,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "300px",
       delay: 100,
-      reset: true,
     });
 
     ScrollReveal().reveal("#about", {
@@ -108,23 +107,22 @@ export default function Portfolio() {
       origin: "left",
       distance: "400px",
       delay: 200,
-      reset: true,
     });
 
-    ScrollReveal().reveal(".three", {
-      duration: 2000,
-      origin: "top",
-      distance: "400px",
-      delay: 250,
-      reset: true,
-    });
-    ScrollReveal().reveal(".twenty", {
-      duration: 2000,
-      origin: "top",
-      distance: "400px",
-      delay: 250,
-      reset: true,
-    });
+    // ScrollReveal().reveal(".three", {
+    //   duration: 2000,
+    //   origin: "top",
+    //   distance: "400px",
+    //   delay: 250,
+    //   reset: true,
+    // });
+    // ScrollReveal().reveal(".twenty", {
+    //   duration: 2000,
+    //   origin: "top",
+    //   distance: "400px",
+    //   delay: 250,
+    //   reset: true,
+    // });
 
     ScrollReveal().reveal(".linked", {
       duration: 2000,
@@ -138,21 +136,18 @@ export default function Portfolio() {
       origin: "left",
       distance: "400px",
       delay: 300,
-      reset: true,
     });
     ScrollReveal().reveal(".insta", {
       duration: 2000,
       origin: "left",
       distance: "200px",
       delay: 200,
-      reset: true,
     });
     ScrollReveal().reveal(".whats", {
       duration: 2000,
       origin: "left",
       distance: "100px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".java", {
@@ -160,7 +155,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".react", {
@@ -168,7 +162,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".css", {
@@ -176,7 +169,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".html", {
@@ -184,7 +176,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".mongo", {
@@ -192,7 +183,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".figma", {
@@ -200,7 +190,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".node", {
@@ -208,7 +197,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".postman", {
@@ -216,7 +204,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".python", {
@@ -224,7 +211,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".vite", {
@@ -232,7 +218,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".vercel", {
@@ -240,7 +225,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".nodemon", {
@@ -248,7 +232,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".udemy", {
@@ -256,7 +239,6 @@ export default function Portfolio() {
       origin: "left",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
 
     ScrollReveal().reveal(".techstudio", {
@@ -264,7 +246,6 @@ export default function Portfolio() {
       origin: "right",
       distance: "900px",
       delay: 150,
-      reset: true,
     });
   }, []);
 
@@ -327,7 +308,7 @@ export default function Portfolio() {
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-15 h-15 rounded-full bg-gradient-to-br from-indigo-500 via-pink-500 to-yellow-400 shadow-md flex items-center justify-center text-white font-semibold">
-                <img src={tisetiwa} alt="" />
+                <img src={headshot} alt="" />
               </div>
               <div>
                 <h1 className="text-xl font-semibold">Ismail Timileyin</h1>
@@ -386,7 +367,7 @@ export default function Portfolio() {
             id="home"
             className="mt-12 grid gap-6 md:grid-cols-2 items-center"
           >
-            <div>
+            <div className="sm:mt-[-40px]">
               <h2 className="typing-text text-3xl sm:text-4xl font-extrabold leading-tight">
                 Hi, I'm{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-500">
@@ -457,25 +438,11 @@ export default function Portfolio() {
 
             <div className="order-last md:order-last years">
               {/* colorful card */}
-              <div className="rounded-2xl p-6 shadow-xl bg-gradient-to-br from-white via-indigo-50 to-pink-50 dark:from-gray-900 dark:via-indigo-900/50 dark:to-pink-900/40 border border-gray-200 dark:border-gray-700">
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Available for freelance & remote roles · Open to collaboration
-                </p>
-                <div className="mt-4 grid grid-cols-2 gap-4">
-                  <div className="p-3 bg-white dark:bg-gray-800/60 rounded-lg text-center">
-                    <div className="three text-2xl font-semibold">3+</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-300">
-                      Years experience
-                    </div>
-                  </div>
-                  <div className="p-3 bg-white dark:bg-gray-800/60 rounded-lg text-center">
-                    <div className="twenty text-2xl font-semibold">10+</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-300">
-                      Completed projects
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src={headshot}
+                alt=""
+                className="h-[350px] w-[350px] sm:w-[370px] sm:h-[370px] sm:mt-[-50px] mt-[-50px]  ml-[120px]"
+              />
             </div>
           </section>
         </header>
@@ -483,7 +450,7 @@ export default function Portfolio() {
         <main className="max-w-5xl mx-auto px-6 py-6 space-y-12">
           <section
             id="about"
-            className="bg-white dark:bg-gray-900/40 p-6 rounded-2xl border border-gray-100 dark:border-gray-800"
+            className="bg-white dark:bg-gray-900/40 p-6 rounded-2xl border mt-[-20px] sm:mt-[-10px] border-gray-100 dark:border-gray-800"
           >
             <h3 className="text-xl font-bold">About</h3>
 
@@ -495,7 +462,25 @@ export default function Portfolio() {
               in mobile app development to expand my skills and create solutions
               that make everyday life easier.
             </p>
-
+            <div className="rounded-2xl p-6 shadow-xl mt-9 bg-gradient-to-br from-white via-indigo-50 to-pink-50 dark:from-gray-900 dark:via-indigo-900/50 dark:to-pink-900/40 border border-gray-200 dark:border-gray-700">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Available for freelance & remote roles · Open to collaboration
+              </p>
+              <div className="mt-4 grid grid-cols-2 gap-4">
+                <div className="p-3 bg-white dark:bg-gray-800/60 rounded-lg text-center">
+                  <div className="three text-2xl font-semibold">3+</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-300">
+                    Years experience
+                  </div>
+                </div>
+                <div className="p-3 bg-white dark:bg-gray-800/60 rounded-lg text-center">
+                  <div className="twenty text-2xl font-semibold">10+</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-300">
+                    Completed projects
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div className="text-sm">
               <div className="font-semibold">Languages</div>
