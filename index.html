@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Tisebratz.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Apply saved theme early to avoid flash
+      (function () {
+        try {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const useDark = saved === 'dark' || (saved !== 'light' && prefersDark);
+          document.documentElement.classList.toggle('dark', useDark);
+        } catch (_) {
+          // no-op
+        }
+      })();
+    </script>
     <title>Timi's Portfolio</title>
   </head>
   <body>

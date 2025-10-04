@@ -27,11 +27,32 @@ import techstudio from "../../assets/techstudio.jpg";
 
 const projectsSeed = [
   {
+    id: 7,
+    title: "Rielshotit — Photographer & Videographer",
+    desc: "Portfolio website for a professional photographer/videographer showcasing projects and services.",
+    demo: "https://riel-s-portfolio.vercel.app",
+    github: "",
+  },
+  {
+    id: 8,
+    title: "Tidoy",
+    desc: "Modern web app landing built with a React + Vite stack.",
+    demo: "https://tidoy-main-seven.vercel.app/",
+    github: "",
+  },
+  {
     id: 1,
     title: "E-commerce Website",
     desc: "Client-side dessert ordering demo — product list, add-to-cart, cart totals and order confirmation. Built with vanilla JavaScript, HTML and CSS.",
     demo: "https://tise-tiwa-e-commerce-order-desert-a.vercel.app/",
     github: "https://github.com/TiseTiwa/E-Commerce-Order-Desert-App",
+  },
+  {
+    id: 5,
+    title: "Bible Quiz App",
+    desc: "Interactive browser quiz with client-side scoring and sound effects — questions, high-score stored in browser, start/next/try again flows",
+    demo: "https://tise-tiwa-s-bible-quiz.vercel.app",
+    github: "https://github.com/TiseTiwa/Tise-Tiwa-s-Bible-Quiz",
   },
   {
     id: 2,
@@ -53,13 +74,6 @@ const projectsSeed = [
     desc: "A lightweight client-side calculator implemented with vanilla JavaScript, HTML and CSS — supports basic arithmetic and a clean UI.",
     demo: "https://tise-tiwa-s-calculator-app.vercel.app",
     github: "https://github.com/TiseTiwa/Tise-Tiwa-s-Calculator-App",
-  },
-  {
-    id: 5,
-    title: "Bible Quiz App",
-    desc: "Interactive browser quiz with client-side scoring and sound effects — questions, high-score stored in browser, start/next/try again flows",
-    demo: "https://tise-tiwa-s-bible-quiz.vercel.app",
-    github: "https://github.com/TiseTiwa/Tise-Tiwa-s-Bible-Quiz",
   },
 
   {
@@ -298,7 +312,6 @@ export default function Portfolio() {
 
   return (
     <div>
-
       <div className="min-h-screen bg-gradient-to-r from-white to-gray-50 dark:from-black dark:to-purple-800 text-gray-900 dark:text-gray-100 transition-colors duration-100 overflow-x-hidden">
         {/* Top floating controls */}
         <div className="fixed top-4 right-4 flex items-center gap-3 z-50">
@@ -666,7 +679,11 @@ export default function Portfolio() {
                 <img src={udemycert} alt="" className="sm:h-[350px] udemy" />
               </div>
               <div className="">
-                <img src={techstudio} alt="" className="sm:h-[350px] techstudio" />
+                <img
+                  src={techstudio}
+                  alt=""
+                  className="sm:h-[350px] techstudio"
+                />
               </div>
             </div>
           </section>
@@ -692,14 +709,16 @@ export default function Portfolio() {
                     >
                       Live Demo
                     </a>
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm px-3 py-1 rounded-md border"
-                    >
-                      GitHub
-                    </a>
+                    {p.github && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-sm px-3 py-1 rounded-md border"
+                      >
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </article>
               ))}
