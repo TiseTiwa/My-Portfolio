@@ -1,23 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Tisebratz.png" />
+    <link rel="icon" type="image/svg+xml" href="/headshotimg.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
       // Apply saved theme early to avoid flash
       (function () {
         try {
-          const saved = localStorage.getItem('theme');
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const useDark = saved === 'dark' || (saved !== 'light' && prefersDark);
-          document.documentElement.classList.toggle('dark', useDark);
+          const saved = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          const useDark =
+            saved === "dark" || (saved !== "light" && prefersDark);
+          document.documentElement.classList.toggle("dark", useDark);
         } catch (_) {
           // no-op
         }
       })();
     </script>
-    <meta name="google-site-verification" content="P882iZpi9l6vEioVzSmUkQ7Aa8u_tx9hc3CgZKuj68E" />
+    <meta
+      name="google-site-verification"
+      content="P882iZpi9l6vEioVzSmUkQ7Aa8u_tx9hc3CgZKuj68E"
+    />
     <title>Timi's Portfolio</title>
   </head>
   <body>

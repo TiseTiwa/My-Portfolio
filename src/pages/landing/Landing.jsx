@@ -367,7 +367,7 @@ export default function Portfolio() {
             id="home"
             className="mt-12 grid gap-6 md:grid-cols-2 items-center"
           >
-            <div className="sm:mt-[-40px]">
+            <div className="sm:mt-[-40px] mt-[-15px]">
               <h2 className="typing-text text-3xl sm:text-4xl font-extrabold leading-tight">
                 Hi, I'm{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-500">
@@ -441,7 +441,7 @@ export default function Portfolio() {
               <img
                 src={headshot}
                 alt=""
-                className="h-[350px] w-[350px] sm:w-[370px] sm:h-[370px] sm:mt-[-50px] mt-[-50px]  ml-[120px]"
+                className="h-[350px] w-[350px] sm:w-[370px] sm:h-[370px] sm:mt-[-50px] mt-[-10px]  sm:ml-[120px] "
               />
             </div>
           </section>
